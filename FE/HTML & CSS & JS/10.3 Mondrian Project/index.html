@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .container{
+      display: grid;
+      height: 748px;
+      width: 748px;
+      grid-template-columns: 320px 429px;
+      grid-template-rows: 414px 314px;
+      background-color: #F0F1EC;
+      grid-auto-columns: 50px;
+      grid-auto-rows: 20px;
+    }
+    .red{
+      border-right: 9px solid black ;
+      border-bottom: 9px solid black;
+      background-color: red;
+    }
+    .second-div{
+      border-bottom: 9px solid black;;
+    }
+    .third-div{
+      border-right: 9px solid black;
+      border-bottom: 9px solid black;
+
+    }
+    .fourth-div{
+      border-right: 9px solid black;
+      border-bottom: 9px solid black;
+    }
+    .extra2{
+      border-right: 9px solid black;  ;
+    }
+    #no2{
+      display: grid;
+      grid-template-columns: 207px 162px;
+      
+  
+    }
+    #yellow{
+      background-color: #F9D01E ;
+      border-right: 9px solid black;
+
+    }
+    #black{
+      background-color: black;  
+      border-right: 9px solid black;
+    }
+    .extra1{
+      display: grid;
+      grid-template-columns: 369px 59px;
+      grid-template-rows: 314px 130px;
+    }
+    #blue{
+      background-color: #004592;
+      height: 130px;
+      border-bottom: 9px solid black;
+    }
+    #empty{
+      border-top: 9px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+      <div class="red"></div>
+      <div class="second-div"></div>
+      <div class="third-div"></div>
+      <div class="extra1">
+        <div class="fourth-div"></div>
+        <div id="blue"></div>
+        <div id="empty"></div>
+      </div>
+      <div class="extra2"></div>
+      <div class="extra" id = "no2">
+        <div id="yellow"></div>
+        <div id="black"></div>
+      </div>
+   </div>
+</body>
+
+</html>
